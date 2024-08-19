@@ -3,7 +3,7 @@ name: Workflow exmpale 1
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   Hello:
