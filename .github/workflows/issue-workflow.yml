@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-lates
     steps:
       - name: "dump github contest"
-      - run: echo '${{ toJSON(github.event) }}' | jq
-      - shell: bash
+        run: echo '${{ toJSON(github.event) }}' | jq
+        shell: bash
   
