@@ -1,0 +1,12 @@
+name: Open issues workflows
+
+on:
+  issues:
+    types:[opened]
+jobs:
+  comment-with-action:
+    runs-on: ubuntu-lates
+    steps:
+      - name: "Dump github contex"
+        run: '$ {{ toJSON(github.event) }}' | jq
+        shell: bash
