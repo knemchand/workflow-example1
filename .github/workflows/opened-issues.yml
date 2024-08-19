@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-lates
     steps:
       - name: "Dump github contex"
-        run: '$ {{ toJSON(github.event) }}' | jq
+        run: echo '$ {{ toJSON(github.event) }}' | jq
         shell: bash
